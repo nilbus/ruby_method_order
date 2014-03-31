@@ -42,7 +42,7 @@ module RubyMethodOrder
     def print_csv
       csv = CSV.new($stdout)
       sourcefiles.each do |sourcefile|
-        csv << [name, size, test_ratio, age, File.basename(sourcefile.path), sourcefile.superclass, sourcefile.method_order_class]
+        csv << [name, size, test_ratio, age, File.basename(sourcefile.path), sourcefile.superclass, sourcefile.method_order_class, sourcefile.method_order.join(' < ')]
       end
     end
   end
