@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = RubyMethodOrder::VERSION
   spec.authors       = ["Edward Anderson"]
   spec.email         = ["nilbus@nilbus.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Determine method order (instance, class, constructor) for files in a ruby project}
+  spec.summary       = %q{Synopsis: Run bin/ruby_method_order <project_path>}
+  spec.homepage      = "https://github.com/bbatsov/ruby-style-guide/pull/272"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
